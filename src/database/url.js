@@ -1,0 +1,5 @@
+const { CONSTANTS } = require("./../util/constants");
+
+const DATABASE_URL = `mongodb://${CONSTANTS.DATABASE_USERNAME}:${CONSTANTS.DATABASE_PASSWORD}@${CONSTANTS.DATABASE_HOST}:${CONSTANTS.DATABASE_PORT}/${CONSTANTS.DATABASE_NAME}?authSource=admin`;
+
+module.exports = DATABASE_URL;
